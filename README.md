@@ -1,4 +1,4 @@
-# Landing Page with Prismic
+# Landing Page com Prismic
 
 ## Links:
 
