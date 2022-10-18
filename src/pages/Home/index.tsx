@@ -8,8 +8,6 @@ import {
   ContentCard
 } from './styles'
 
-import featureImg from '../../assets/feature.svg'
-
 export const Home = () => {
   const [document] = useFirstPrismicDocument()
 
@@ -27,13 +25,16 @@ export const Home = () => {
           <h1>{document?.data.content_title[0].text}</h1>
           <span>{document?.data.content_subtitle[0].text}</span>
         </TextContentContainer>
-        <ContentCard>
-          <div>
-            <h1>{document?.data.card_title[0].text}</h1>
-            <span>{document?.data.card_subtitle[0].text}</span>
-          </div>
-          <img src={featureImg} alt="Feature" />
-        </ContentCard>
+
+        {document?.data.body.map((item: any) => (
+          <ContentCard>
+            <div>
+              <h1>{item.primary.title[0].text}</h1>
+              <span>{item.primary.description[0].text}</span>
+            </div>
+            <img src={item.primary.image.url} alt="Feature" />
+          </ContentCard>
+        ))}
       </ContentContainer>
     </>
   )
