@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   padding: 100px;
-  background: rgba(247, 250, 252);
+  background: #f7fafc;
 `
 
 export const TextContainer = styled.div`
@@ -19,7 +19,7 @@ export const TextContainer = styled.div`
 
   h1 {
     font-size: 3rem;
-    color: black;
+    color: #000;
   }
 
   h2 {
@@ -29,7 +29,7 @@ export const TextContainer = styled.div`
 
   span {
     font-size: 1.5rem;
-    color: gray;
+    color: #808080;
   }
 `
 
@@ -52,12 +52,12 @@ export const TextContentContainer = styled.div`
 
   h1 {
     font-size: 2rem;
-    color: black;
+    color: #000;
   }
 
   span {
     font-size: 1rem;
-    color: gray;
+    color: #808080;
   }
 `
 
@@ -79,12 +79,13 @@ export const ContentCard = styled.div`
 
     h1 {
       font-size: 1.875rem;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     span {
       line-height: 2.25rem;
       word-break: break-word;
+      color: #808080;
     }
   }
 

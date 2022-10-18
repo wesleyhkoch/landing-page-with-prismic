@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  background: rgba(247, 250, 252);
+  background: #f7fafc;
 `
 
 export const LogoContainer = styled.div`
@@ -16,10 +16,11 @@ export const LogoContainer = styled.div`
   svg {
     width: 40px;
     height: 40px;
+    color: #03a9f4;
   }
 
   h1 {
-    font-weight: bold;
+    font-weight: 700;
   }
 `
 
@@ -32,6 +33,6 @@ export const ButtonsContainer = styled.div`
     background: none;
 
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700;
   }
 `

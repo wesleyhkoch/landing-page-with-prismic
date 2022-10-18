@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <Container>
       <LogoContainer>
-        <VscGraph color="rgba(3,169,244)" />
+        <VscGraph />
         <h1>Landing</h1>
       </LogoContainer>
     </Container>

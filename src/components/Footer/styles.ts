@@ -5,7 +5,7 @@ export const Container = styled.footer`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  background: rgba(247, 250, 252);
+  background: #f7fafc;
   padding: 50px;
 `
 
@@ -18,9 +18,10 @@ export const LogoContainer = styled.div`
   svg {
     width: 40px;
     height: 40px;
+    color: #03a9f4;
   }
 
   h1 {
-    font-weight: bold;
+    font-weight: 700;
   }
 `
