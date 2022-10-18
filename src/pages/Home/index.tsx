@@ -26,8 +26,12 @@ export const Home = () => {
           <span>{document?.data.content_subtitle[0].text}</span>
         </TextContentContainer>
 
-        {document?.data.body.map((item: any) => (
-          <ContentCard>
+        {document?.data.body.map((item: any, i: number) => (
+          <ContentCard
+            style={{
+              flexDirection: (i + 1) % 2 === 0 ? 'row-reverse' : 'row'
+            }}
+          >
             <div>
               <h1>{item.primary.title[0].text}</h1>
               <span>{item.primary.description[0].text}</span>
