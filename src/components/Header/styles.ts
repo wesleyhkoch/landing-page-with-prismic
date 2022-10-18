@@ -2,33 +2,36 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
-    0 0 2px rgb(0 0 0 / 7%);
-  z-index: 9;
-  width: 100%;
-  height: 100px;
-  margin-bottom: 100px;
-  background-color: white;
+  justify-content: space-around;
+  background: rgba(247, 250, 252);
+`
+
+export const LogoContainer = styled.div`
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+
+  cursor: pointer;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
 `
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 10px;
 
   button {
-    width: 120px;
-    height: 30px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: white;
+    border: none;
+    background: none;
 
-    &:hover {
-      background-color: black;
-      color: white;
-      transition: all 0.25s ease-out;
-    }
+    font-size: 17px;
+    font-weight: bold;
   }
 `
