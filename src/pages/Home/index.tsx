@@ -1,3 +1,5 @@
+import { useFirstPrismicDocument } from '@prismicio/react'
+
 import {
   Container,
   TextContainer,
@@ -9,31 +11,26 @@ import {
 import featureImg from '../../assets/feature.svg'
 
 export const Home = () => {
+  const [document] = useFirstPrismicDocument()
+
   return (
     <>
       <Container>
         <TextContainer>
-          <h1>The modern landing page for</h1>
-          <h2>React developers</h2>
-          <span>The easiest way to build a React landing page in seconds.</span>
+          <h1>{document?.data.main_title[0].text}</h1>
+          <h2>{document?.data.main_title_blue[0].text}</h2>
+          <span>{document?.data.main_subtitle[0].text}</span>
         </TextContainer>
       </Container>
       <ContentContainer>
         <TextContentContainer>
-          <h1>Your title here</h1>
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            malesuada nisi tellus, non imperdiet nisi tempor at.
-          </span>
+          <h1>{document?.data.content_title[0].text}</h1>
+          <span>{document?.data.content_subtitle[0].text}</span>
         </TextContentContainer>
         <ContentCard>
           <div>
-            <h1>Your title here</h1>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse bibendum, nunc non posuere consectetur, justo erat
-              semper enim, non hendrerit dui odio id enim.
-            </span>
+            <h1>{document?.data.card_title[0].text}</h1>
+            <span>{document?.data.card_subtitle[0].text}</span>
           </div>
           <img src={featureImg} alt="Feature" />
         </ContentCard>
