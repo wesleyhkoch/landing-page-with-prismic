@@ -6,13 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
-
     overflow-x: hidden;
   }
 
-  body {
-    background-color: rgb(241, 241, 241);
-  }
 
   button {
     cursor: pointer;
