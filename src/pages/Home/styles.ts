@@ -66,6 +66,7 @@ export const ContentCard = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  width: 100%;
 
   div {
     display: flex;
@@ -74,6 +75,7 @@ export const ContentCard = styled.div`
     flex-direction: column;
     gap: 1.5rem;
     padding: 0 1.5rem;
+    width: 50%;
 
     h1 {
       font-size: 1.875rem;
