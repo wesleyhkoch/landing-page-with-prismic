@@ -1,4 +1,4 @@
-import { useFirstPrismicDocument } from '@prismicio/react'
+import { useSinglePrismicDocument } from '@prismicio/react'
 
 import {
   Container,
@@ -9,7 +9,9 @@ import {
 } from './styles'
 
 export const Home = () => {
-  const [document] = useFirstPrismicDocument()
+  const [document] = useSinglePrismicDocument('main_page', {
+    lang: navigator.language
+  })
 
   return (
     <>
